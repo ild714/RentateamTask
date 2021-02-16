@@ -5,7 +5,92 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>1965937F-BD3F-40B4-B5FE-E21ACC928CF4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>1965937F-BD3F-40B4-B5FE-E21ACC928CF4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>RentateamApp-bxsdggmewzdfxjfjwjvarunnplkc</string>
+			<key>timeStartedRecording</key>
+			<real>635194525.86809695</real>
+			<key>timeStoppedRecording</key>
+			<real>635194529.82325101</real>
+			<key>title</key>
+			<string>Build target RentateamApp</string>
+			<key>uniqueIdentifier</key>
+			<string>1965937F-BD3F-40B4-B5FE-E21ACC928CF4</string>
+		</dict>
+		<key>582F7370-B6D0-4BB5-82A9-AF6EAF8FCE08</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>582F7370-B6D0-4BB5-82A9-AF6EAF8FCE08.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>SDWebImage-gmlcuaxpxwjjjncfjjagjjzfcotb</string>
+			<key>timeStartedRecording</key>
+			<real>635125430.18749201</real>
+			<key>timeStoppedRecording</key>
+			<real>635125441.66070104</real>
+			<key>title</key>
+			<string>Build target SDWebImage</string>
+			<key>uniqueIdentifier</key>
+			<string>582F7370-B6D0-4BB5-82A9-AF6EAF8FCE08</string>
+		</dict>
+		<key>933DC017-A1B0-4954-8A99-52D3F169E101</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>933DC017-A1B0-4954-8A99-52D3F169E101.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Pods-RentateamApp-gmlcuaxpxwjjjncfjjagjjzfcotb</string>
+			<key>timeStartedRecording</key>
+			<real>635188801.61457801</real>
+			<key>timeStoppedRecording</key>
+			<real>635188801.77440798</real>
+			<key>title</key>
+			<string>Build target Pods-RentateamApp</string>
+			<key>uniqueIdentifier</key>
+			<string>933DC017-A1B0-4954-8A99-52D3F169E101</string>
+		</dict>
+	</dict>
 	<key>preserveOldLogs</key>
 	<true/>
 </dict>

@@ -3,27 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		743194B025DAB08A00F5A866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743194AF25DAB08A00F5A866 /* AppDelegate.swift */; };
-		743194B225DAB08A00F5A866 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743194B125DAB08A00F5A866 /* SceneDelegate.swift */; };
-		743194B425DAB08A00F5A866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743194B325DAB08A00F5A866 /* ViewController.swift */; };
-		743194B725DAB08A00F5A866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743194B525DAB08A00F5A866 /* Main.storyboard */; };
 		743194B925DAB08D00F5A866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743194B825DAB08D00F5A866 /* Assets.xcassets */; };
 		743194BC25DAB08D00F5A866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743194BA25DAB08D00F5A866 /* LaunchScreen.storyboard */; };
+		743194D125DAB67700F5A866 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743194D025DAB67700F5A866 /* Photo.swift */; };
+		743194D525DAB6EC00F5A866 /* PhotoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743194D425DAB6EC00F5A866 /* PhotoPresenter.swift */; };
+		743194E225DAC05800F5A866 /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743194E125DAC05800F5A866 /* PhotoTableViewController.swift */; };
+		743194E725DACCCC00F5A866 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743194E525DACCCC00F5A866 /* PhotoTableViewCell.swift */; };
+		743194E825DACCCC00F5A866 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 743194E625DACCCC00F5A866 /* PhotoTableViewCell.xib */; };
+		743194F125DACFBC00F5A866 /* PhotoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 743194F025DACFBC00F5A866 /* PhotoTableViewController.xib */; };
+		743194F425DAD34400F5A866 /* AssemblyModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743194F325DAD34400F5A866 /* AssemblyModuleBuilder.swift */; };
+		743194FC25DB2DB400F5A866 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743194FB25DB2DB400F5A866 /* Photos.swift */; };
+		743194FF25DB2E3800F5A866 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743194FE25DB2E3800F5A866 /* NetworkService.swift */; };
+		7431950825DBE70100F5A866 /* DetailedPhotoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7431950725DBE70100F5A866 /* DetailedPhotoPresenter.swift */; };
+		7431950E25DBE94700F5A866 /* DetailedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7431950C25DBE94700F5A866 /* DetailedPhotoViewController.swift */; };
+		7431950F25DBE94700F5A866 /* DetailedPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7431950D25DBE94700F5A866 /* DetailedPhotoViewController.xib */; };
+		7431951425DC363500F5A866 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7431951325DC363500F5A866 /* Router.swift */; };
+		8DAFC21129F1DC55F3746BA6 /* Pods_RentateamApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8FC162EDA3107BC42E6A57 /* Pods_RentateamApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		063467057DBA9332F9B1F8A7 /* Pods-RentateamApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentateamApp.debug.xcconfig"; path = "Target Support Files/Pods-RentateamApp/Pods-RentateamApp.debug.xcconfig"; sourceTree = "<group>"; };
 		743194AC25DAB08A00F5A866 /* RentateamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentateamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		743194AF25DAB08A00F5A866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		743194B125DAB08A00F5A866 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		743194B325DAB08A00F5A866 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		743194B625DAB08A00F5A866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		743194B825DAB08D00F5A866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		743194BB25DAB08D00F5A866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		743194BD25DAB08D00F5A866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		743194D025DAB67700F5A866 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		743194D425DAB6EC00F5A866 /* PhotoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPresenter.swift; sourceTree = "<group>"; };
+		743194E125DAC05800F5A866 /* PhotoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
+		743194E525DACCCC00F5A866 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		743194E625DACCCC00F5A866 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
+		743194F025DACFBC00F5A866 /* PhotoTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewController.xib; sourceTree = "<group>"; };
+		743194F325DAD34400F5A866 /* AssemblyModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyModuleBuilder.swift; sourceTree = "<group>"; };
+		743194FB25DB2DB400F5A866 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		743194FE25DB2E3800F5A866 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		7431950725DBE70100F5A866 /* DetailedPhotoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPhotoPresenter.swift; sourceTree = "<group>"; };
+		7431950C25DBE94700F5A866 /* DetailedPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPhotoViewController.swift; sourceTree = "<group>"; };
+		7431950D25DBE94700F5A866 /* DetailedPhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailedPhotoViewController.xib; sourceTree = "<group>"; };
+		7431951325DC363500F5A866 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B1948D80D72756B98CA528E9 /* Pods-RentateamApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentateamApp.release.xcconfig"; path = "Target Support Files/Pods-RentateamApp/Pods-RentateamApp.release.xcconfig"; sourceTree = "<group>"; };
+		FD8FC162EDA3107BC42E6A57 /* Pods_RentateamApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentateamApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DAFC21129F1DC55F3746BA6 /* Pods_RentateamApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		730CE916F14E9629437A0113 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD8FC162EDA3107BC42E6A57 /* Pods_RentateamApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		743194A325DAB08A00F5A866 = {
 			isa = PBXGroup;
 			children = (
 				743194AE25DAB08A00F5A866 /* RentateamApp */,
 				743194AD25DAB08A00F5A866 /* Products */,
+				F8E7D358DCAAF85D0771BD1D /* Pods */,
+				730CE916F14E9629437A0113 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +91,130 @@
 		743194AE25DAB08A00F5A866 /* RentateamApp */ = {
 			isa = PBXGroup;
 			children = (
-				743194AF25DAB08A00F5A866 /* AppDelegate.swift */,
-				743194B125DAB08A00F5A866 /* SceneDelegate.swift */,
-				743194B325DAB08A00F5A866 /* ViewController.swift */,
-				743194B525DAB08A00F5A866 /* Main.storyboard */,
-				743194B825DAB08D00F5A866 /* Assets.xcassets */,
-				743194BA25DAB08D00F5A866 /* LaunchScreen.storyboard */,
+				743194F325DAD34400F5A866 /* AssemblyModuleBuilder.swift */,
+				7431951325DC363500F5A866 /* Router.swift */,
+				743194F725DAD55F00F5A866 /* ApplicationCycle */,
+				743194EA25DACD9700F5A866 /* Photos */,
+				7431950625DBE6A300F5A866 /* DetailedPhotos */,
+				7431950125DB2E5100F5A866 /* ServiceLayer */,
+				743194F825DAD58800F5A866 /* Resources */,
 				743194BD25DAB08D00F5A866 /* Info.plist */,
 			);
 			path = RentateamApp;
+			sourceTree = "<group>";
+		};
+		743194EA25DACD9700F5A866 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				743194ED25DACDBE00F5A866 /* View */,
+				743194EC25DACDB400F5A866 /* Presenter */,
+				743194EB25DACDA900F5A866 /* Model */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		743194EB25DACDA900F5A866 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				743194D025DAB67700F5A866 /* Photo.swift */,
+				743194FB25DB2DB400F5A866 /* Photos.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		743194EC25DACDB400F5A866 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				743194D425DAB6EC00F5A866 /* PhotoPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		743194ED25DACDBE00F5A866 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				743194EF25DACDE200F5A866 /* ViewController */,
+				743194EE25DACDCE00F5A866 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		743194EE25DACDCE00F5A866 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				743194E525DACCCC00F5A866 /* PhotoTableViewCell.swift */,
+				743194E625DACCCC00F5A866 /* PhotoTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		743194EF25DACDE200F5A866 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				743194E125DAC05800F5A866 /* PhotoTableViewController.swift */,
+				743194F025DACFBC00F5A866 /* PhotoTableViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		743194F725DAD55F00F5A866 /* ApplicationCycle */ = {
+			isa = PBXGroup;
+			children = (
+				743194AF25DAB08A00F5A866 /* AppDelegate.swift */,
+				743194BA25DAB08D00F5A866 /* LaunchScreen.storyboard */,
+			);
+			path = ApplicationCycle;
+			sourceTree = "<group>";
+		};
+		743194F825DAD58800F5A866 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				743194B825DAB08D00F5A866 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7431950125DB2E5100F5A866 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				743194FE25DB2E3800F5A866 /* NetworkService.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		7431950625DBE6A300F5A866 /* DetailedPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				7431950B25DBE90000F5A866 /* View */,
+				7431950A25DBE70700F5A866 /* Presenter */,
+			);
+			path = DetailedPhotos;
+			sourceTree = "<group>";
+		};
+		7431950A25DBE70700F5A866 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7431950725DBE70100F5A866 /* DetailedPhotoPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7431950B25DBE90000F5A866 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7431950C25DBE94700F5A866 /* DetailedPhotoViewController.swift */,
+				7431950D25DBE94700F5A866 /* DetailedPhotoViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8E7D358DCAAF85D0771BD1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				063467057DBA9332F9B1F8A7 /* Pods-RentateamApp.debug.xcconfig */,
+				B1948D80D72756B98CA528E9 /* Pods-RentateamApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 743194C025DAB08D00F5A866 /* Build configuration list for PBXNativeTarget "RentateamApp" */;
 			buildPhases = (
+				8D41DCD846B1D4C68FCE2669 /* [CP] Check Pods Manifest.lock */,
 				743194A825DAB08A00F5A866 /* Sources */,
 				743194A925DAB08A00F5A866 /* Frameworks */,
 				743194AA25DAB08A00F5A866 /* Resources */,
+				7F382AC4210E76FF4451CC8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,36 +276,80 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				743194E825DACCCC00F5A866 /* PhotoTableViewCell.xib in Resources */,
 				743194BC25DAB08D00F5A866 /* LaunchScreen.storyboard in Resources */,
+				7431950F25DBE94700F5A866 /* DetailedPhotoViewController.xib in Resources */,
+				743194F125DACFBC00F5A866 /* PhotoTableViewController.xib in Resources */,
 				743194B925DAB08D00F5A866 /* Assets.xcassets in Resources */,
-				743194B725DAB08A00F5A866 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F382AC4210E76FF4451CC8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RentateamApp/Pods-RentateamApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RentateamApp/Pods-RentateamApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RentateamApp/Pods-RentateamApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D41DCD846B1D4C68FCE2669 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RentateamApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		743194A825DAB08A00F5A866 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				743194B425DAB08A00F5A866 /* ViewController.swift in Sources */,
+				743194E725DACCCC00F5A866 /* PhotoTableViewCell.swift in Sources */,
+				743194D125DAB67700F5A866 /* Photo.swift in Sources */,
+				743194FF25DB2E3800F5A866 /* NetworkService.swift in Sources */,
+				7431950E25DBE94700F5A866 /* DetailedPhotoViewController.swift in Sources */,
+				743194D525DAB6EC00F5A866 /* PhotoPresenter.swift in Sources */,
+				743194E225DAC05800F5A866 /* PhotoTableViewController.swift in Sources */,
 				743194B025DAB08A00F5A866 /* AppDelegate.swift in Sources */,
-				743194B225DAB08A00F5A866 /* SceneDelegate.swift in Sources */,
+				743194F425DAD34400F5A866 /* AssemblyModuleBuilder.swift in Sources */,
+				743194FC25DB2DB400F5A866 /* Photos.swift in Sources */,
+				7431950825DBE70100F5A866 /* DetailedPhotoPresenter.swift in Sources */,
+				7431951425DC363500F5A866 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		743194B525DAB08A00F5A866 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				743194B625DAB08A00F5A866 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		743194BA25DAB08D00F5A866 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,11 +479,13 @@
 		};
 		743194C125DAB08D00F5A866 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 063467057DBA9332F9B1F8A7 /* Pods-RentateamApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RentateamApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,17 +493,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = iOS.RentateamApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		743194C225DAB08D00F5A866 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1948D80D72756B98CA528E9 /* Pods-RentateamApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RentateamApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +513,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = iOS.RentateamApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
