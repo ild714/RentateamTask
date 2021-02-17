@@ -15,6 +15,7 @@ protocol RouterMain {
 protocol RouterProtocol: RouterMain {
     func initialViewController()
     func showDetail(photo: Photo)
+    func showDetailCore(photo: PhotoCoreData) 
 }
 
 class Router: RouterProtocol {
@@ -36,6 +37,13 @@ class Router: RouterProtocol {
     func showDetail(photo: Photo) {
         if let navigationController = navigationController {
             guard let detailedViewController = assemblyBuilder?.createDetailedPhotoModule(photo: photo, router: self) else { return }
+            navigationController.pushViewController(detailedViewController, animated: true)
+        }
+    }
+    
+    func showDetailCore(photo: PhotoCoreData) {
+        if let navigationController = navigationController {
+            guard let detailedViewController = assemblyBuilder?.createDetailedPhotoModuleCore(photo: photo, router: self) else { return }
             navigationController.pushViewController(detailedViewController, animated: true)
         }
     }

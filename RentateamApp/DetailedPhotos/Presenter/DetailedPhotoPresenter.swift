@@ -9,6 +9,7 @@ import Foundation
 
 protocol DetailedPhotoViewProtocol: class {
     func setPhoto(photo: Photo?)
+    func setPhotoCore(photo: PhotoCoreData?)
 }
 
 protocol DetailedPhotoViewPresenterProtocol: class {
@@ -19,6 +20,7 @@ protocol DetailedPhotoViewPresenterProtocol: class {
 class DetailedPhotoPresenter: DetailedPhotoViewPresenterProtocol {
     weak var view: DetailedPhotoViewProtocol?
     var photo: Photo?
+    var photoCore: PhotoCoreData?
     var router: RouterProtocol?
     
     required init(view: DetailedPhotoViewProtocol,router:RouterProtocol, photo: Photo) {
@@ -27,7 +29,16 @@ class DetailedPhotoPresenter: DetailedPhotoViewPresenterProtocol {
         self.router = router
     }
     
+    required init(view: DetailedPhotoViewProtocol,router:RouterProtocol, photo: PhotoCoreData) {
+        self.view = view
+        self.photoCore = photo
+        self.router = router
+    }
+    
     public func setPhoto() {
         self.view?.setPhoto(photo: photo)
+    }
+    public func setPhotoCore() {
+        self.view?.setPhotoCore(photo: photoCore)
     }
 }

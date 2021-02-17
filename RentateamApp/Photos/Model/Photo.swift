@@ -8,6 +8,13 @@
 import UIKit
 
 struct Photo: Codable {
+    var id: Int
     let title: String
     let url: String
+}
+
+struct PhotoCoreData: Codable {
+    var id: Int
+    let title: String
+    let data: Data
 }

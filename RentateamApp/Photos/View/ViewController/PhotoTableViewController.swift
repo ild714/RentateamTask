@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class PhotoTableViewController: UIViewController {
     
@@ -20,10 +21,11 @@ class PhotoTableViewController: UIViewController {
         tableView.delegate = self
         return tableView
     }()
+    var errorPhoto = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTableView() 
+        setupTableView()
     }
     
     func setupTableView() {
@@ -42,24 +44,44 @@ class PhotoTableViewController: UIViewController {
 // MARK: - UITableViewDelegate
 extension PhotoTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let photo = presenter.photos?[indexPath.row] else { return }
-        presenter.tapOnThePhoto(photo: photo)
+        
+        if errorPhoto {
+            guard let photo = presenter.photosCoreData?[indexPath.row] else { return }
+            presenter.tapOnThePhotoCore(photo: photo)
+        } else {
+            guard let photo = presenter.photos?[indexPath.row] else { return }
+            presenter.tapOnThePhoto(photo: photo)
+        }
     }
 }
 
 // MARK: - UITableViewDelegate
 extension PhotoTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter.photos?.count ?? 0
+        if errorPhoto {
+            return presenter.photosCoreData?.count ?? 0
+        } else {
+            return presenter.photos?.count ?? 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? PhotoTableViewCell else {
             return UITableViewCell()
         }
-        let photo = presenter.photos?[indexPath.row]
-        cell.configure(text: photo?.title ?? "No title", url: photo?.url ?? "No url")
-        return cell
+        
+        if errorPhoto {
+            let photo = presenter.photosCoreData?[indexPath.row]
+            cell.configureCore(text: photo?.title ?? "No title", data: photo?.data ?? Data())
+            
+            return cell
+        } else {
+            let photo = presenter.photos?[indexPath.row]
+            
+            cell.configure(text: photo?.title ?? "No title", url: photo?.url ?? "No url")
+            return cell
+        }
     }
     
     override func viewWillAppear(_ animated: Bool)
@@ -76,6 +98,13 @@ extension PhotoTableViewController: PhotoViewProtocol {
     }
     
     func failure(error: Error) {
+        errorPhoto = true
+        if let photos = presenter.fetchData() {
+            presenter.setPhotos(photos: photos)
+            tableView.reloadData()
+        }
+        
+        
         print(error.localizedDescription)
     }
 }

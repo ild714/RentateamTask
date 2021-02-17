@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		742CD00625DC9FD100560EF0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 742CD00425DC9FD100560EF0 /* Model.xcdatamodeld */; };
+		742CD02925DCB13C00560EF0 /* PhotoDb+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742CD02725DCB13C00560EF0 /* PhotoDb+CoreDataClass.swift */; };
+		742CD02A25DCB13C00560EF0 /* PhotoDb+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742CD02825DCB13C00560EF0 /* PhotoDb+CoreDataProperties.swift */; };
 		743194B025DAB08A00F5A866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743194AF25DAB08A00F5A866 /* AppDelegate.swift */; };
 		743194B925DAB08D00F5A866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743194B825DAB08D00F5A866 /* Assets.xcassets */; };
 		743194BC25DAB08D00F5A866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743194BA25DAB08D00F5A866 /* LaunchScreen.storyboard */; };
@@ -17,17 +20,20 @@
 		743194E825DACCCC00F5A866 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 743194E625DACCCC00F5A866 /* PhotoTableViewCell.xib */; };
 		743194F125DACFBC00F5A866 /* PhotoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 743194F025DACFBC00F5A866 /* PhotoTableViewController.xib */; };
 		743194F425DAD34400F5A866 /* AssemblyModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743194F325DAD34400F5A866 /* AssemblyModuleBuilder.swift */; };
-		743194FC25DB2DB400F5A866 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743194FB25DB2DB400F5A866 /* Photos.swift */; };
 		743194FF25DB2E3800F5A866 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743194FE25DB2E3800F5A866 /* NetworkService.swift */; };
 		7431950825DBE70100F5A866 /* DetailedPhotoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7431950725DBE70100F5A866 /* DetailedPhotoPresenter.swift */; };
 		7431950E25DBE94700F5A866 /* DetailedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7431950C25DBE94700F5A866 /* DetailedPhotoViewController.swift */; };
 		7431950F25DBE94700F5A866 /* DetailedPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7431950D25DBE94700F5A866 /* DetailedPhotoViewController.xib */; };
 		7431951425DC363500F5A866 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7431951325DC363500F5A866 /* Router.swift */; };
+		7431952025DC998100F5A866 /* CoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7431951F25DC998100F5A866 /* CoreService.swift */; };
 		8DAFC21129F1DC55F3746BA6 /* Pods_RentateamApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8FC162EDA3107BC42E6A57 /* Pods_RentateamApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		063467057DBA9332F9B1F8A7 /* Pods-RentateamApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentateamApp.debug.xcconfig"; path = "Target Support Files/Pods-RentateamApp/Pods-RentateamApp.debug.xcconfig"; sourceTree = "<group>"; };
+		742CD00525DC9FD100560EF0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		742CD02725DCB13C00560EF0 /* PhotoDb+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoDb+CoreDataClass.swift"; sourceTree = "<group>"; };
+		742CD02825DCB13C00560EF0 /* PhotoDb+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoDb+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		743194AC25DAB08A00F5A866 /* RentateamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentateamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		743194AF25DAB08A00F5A866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		743194B825DAB08D00F5A866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,12 +46,12 @@
 		743194E625DACCCC00F5A866 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
 		743194F025DACFBC00F5A866 /* PhotoTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewController.xib; sourceTree = "<group>"; };
 		743194F325DAD34400F5A866 /* AssemblyModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyModuleBuilder.swift; sourceTree = "<group>"; };
-		743194FB25DB2DB400F5A866 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		743194FE25DB2E3800F5A866 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		7431950725DBE70100F5A866 /* DetailedPhotoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPhotoPresenter.swift; sourceTree = "<group>"; };
 		7431950C25DBE94700F5A866 /* DetailedPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPhotoViewController.swift; sourceTree = "<group>"; };
 		7431950D25DBE94700F5A866 /* DetailedPhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailedPhotoViewController.xib; sourceTree = "<group>"; };
 		7431951325DC363500F5A866 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		7431951F25DC998100F5A866 /* CoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreService.swift; sourceTree = "<group>"; };
 		B1948D80D72756B98CA528E9 /* Pods-RentateamApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentateamApp.release.xcconfig"; path = "Target Support Files/Pods-RentateamApp/Pods-RentateamApp.release.xcconfig"; sourceTree = "<group>"; };
 		FD8FC162EDA3107BC42E6A57 /* Pods_RentateamApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentateamApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +79,8 @@
 		743194A325DAB08A00F5A866 = {
 			isa = PBXGroup;
 			children = (
+				742CD02725DCB13C00560EF0 /* PhotoDb+CoreDataClass.swift */,
+				742CD02825DCB13C00560EF0 /* PhotoDb+CoreDataProperties.swift */,
 				743194AE25DAB08A00F5A866 /* RentateamApp */,
 				743194AD25DAB08A00F5A866 /* Products */,
 				F8E7D358DCAAF85D0771BD1D /* Pods */,
@@ -99,6 +107,7 @@
 				7431950125DB2E5100F5A866 /* ServiceLayer */,
 				743194F825DAD58800F5A866 /* Resources */,
 				743194BD25DAB08D00F5A866 /* Info.plist */,
+				742CD00425DC9FD100560EF0 /* Model.xcdatamodeld */,
 			);
 			path = RentateamApp;
 			sourceTree = "<group>";
@@ -117,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				743194D025DAB67700F5A866 /* Photo.swift */,
-				743194FB25DB2DB400F5A866 /* Photos.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				743194FE25DB2E3800F5A866 /* NetworkService.swift */,
+				7431951F25DC998100F5A866 /* CoreService.swift */,
 			);
 			path = ServiceLayer;
 			sourceTree = "<group>";
@@ -337,12 +346,15 @@
 				743194D125DAB67700F5A866 /* Photo.swift in Sources */,
 				743194FF25DB2E3800F5A866 /* NetworkService.swift in Sources */,
 				7431950E25DBE94700F5A866 /* DetailedPhotoViewController.swift in Sources */,
+				742CD02A25DCB13C00560EF0 /* PhotoDb+CoreDataProperties.swift in Sources */,
+				742CD02925DCB13C00560EF0 /* PhotoDb+CoreDataClass.swift in Sources */,
 				743194D525DAB6EC00F5A866 /* PhotoPresenter.swift in Sources */,
 				743194E225DAC05800F5A866 /* PhotoTableViewController.swift in Sources */,
+				7431952025DC998100F5A866 /* CoreService.swift in Sources */,
 				743194B025DAB08A00F5A866 /* AppDelegate.swift in Sources */,
 				743194F425DAD34400F5A866 /* AssemblyModuleBuilder.swift in Sources */,
-				743194FC25DB2DB400F5A866 /* Photos.swift in Sources */,
 				7431950825DBE70100F5A866 /* DetailedPhotoPresenter.swift in Sources */,
+				742CD00625DC9FD100560EF0 /* Model.xcdatamodeld in Sources */,
 				7431951425DC363500F5A866 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,6 +551,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		742CD00425DC9FD100560EF0 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				742CD00525DC9FD100560EF0 /* Model.xcdatamodel */,
+			);
+			currentVersion = 742CD00525DC9FD100560EF0 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 743194A425DAB08A00F5A866 /* Project object */;
 }

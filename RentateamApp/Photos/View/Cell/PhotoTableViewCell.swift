@@ -17,8 +17,13 @@ class PhotoTableViewCell: UITableViewCell {
         photo.layer.cornerRadius = 75
         
         self.photoName.text = text
-        
         self.photo.sd_setImage(with: URL(string: url), completed: nil)
+    }
+    func configureCore(text: String, data: Data) {
+        photo.layer.cornerRadius = 75
+        
+        self.photoName.text = text
+        self.photo.image = UIImage(data: data)
     }
 }
 
