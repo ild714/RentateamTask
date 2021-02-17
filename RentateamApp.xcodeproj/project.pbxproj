@@ -76,11 +76,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		743194A325DAB08A00F5A866 = {
+		742CD02F25DCC34500560EF0 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				742CD02725DCB13C00560EF0 /* PhotoDb+CoreDataClass.swift */,
 				742CD02825DCB13C00560EF0 /* PhotoDb+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		742CD03025DCC37A00560EF0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7431951325DC363500F5A866 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		743194A325DAB08A00F5A866 = {
+			isa = PBXGroup;
+			children = (
 				743194AE25DAB08A00F5A866 /* RentateamApp */,
 				743194AD25DAB08A00F5A866 /* Products */,
 				F8E7D358DCAAF85D0771BD1D /* Pods */,
@@ -100,11 +115,12 @@
 			isa = PBXGroup;
 			children = (
 				743194F325DAD34400F5A866 /* AssemblyModuleBuilder.swift */,
-				7431951325DC363500F5A866 /* Router.swift */,
 				743194F725DAD55F00F5A866 /* ApplicationCycle */,
 				743194EA25DACD9700F5A866 /* Photos */,
 				7431950625DBE6A300F5A866 /* DetailedPhotos */,
+				742CD03025DCC37A00560EF0 /* Router */,
 				7431950125DB2E5100F5A866 /* ServiceLayer */,
+				742CD02F25DCC34500560EF0 /* CoreData */,
 				743194F825DAD58800F5A866 /* Resources */,
 				743194BD25DAB08D00F5A866 /* Info.plist */,
 				742CD00425DC9FD100560EF0 /* Model.xcdatamodeld */,
@@ -169,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				743194AF25DAB08A00F5A866 /* AppDelegate.swift */,
-				743194BA25DAB08D00F5A866 /* LaunchScreen.storyboard */,
 			);
 			path = ApplicationCycle;
 			sourceTree = "<group>";
@@ -178,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				743194B825DAB08D00F5A866 /* Assets.xcassets */,
+				743194BA25DAB08D00F5A866 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

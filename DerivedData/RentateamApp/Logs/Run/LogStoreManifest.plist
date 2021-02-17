@@ -142,6 +142,40 @@
 			<key>uniqueIdentifier</key>
 			<string>7925AEE9-2820-47FA-8928-3B0D313D8049</string>
 		</dict>
+		<key>7C7787F7-68B9-47FD-BDEF-7F6524429E0E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7C7787F7-68B9-47FD-BDEF-7F6524429E0E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>RentateamApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RentateamApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run RentateamApp</string>
+			<key>timeStartedRecording</key>
+			<real>635225038.38297498</real>
+			<key>timeStoppedRecording</key>
+			<real>635225053.40425897</real>
+			<key>title</key>
+			<string>Run RentateamApp</string>
+			<key>uniqueIdentifier</key>
+			<string>7C7787F7-68B9-47FD-BDEF-7F6524429E0E</string>
+		</dict>
 		<key>996831F0-B24A-49C6-A883-0284E7C85DA0</key>
 		<dict>
 			<key>className</key>
